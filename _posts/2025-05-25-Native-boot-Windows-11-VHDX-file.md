@@ -1,3 +1,11 @@
+---
+title: "Native Boot Windows 11 from a VHDX File"
+date: 2025-05-25 10:00:00 +0000
+categories: [Windows, Boot]
+tags: [windows, boot, winpe]
+toc: true
+---
+
 # Native Boot Windows 11 from a VHDX File: Comprehensive Guide
 
 Native booting Windows 11 from a VHDX file enables you to run a full Windows installation directly from a virtual hard disk without virtualization overhead. This approach is particularly useful when adding Windows to an existing Linux system while maintaining separation between operating systems.
