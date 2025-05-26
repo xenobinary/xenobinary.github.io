@@ -3,6 +3,7 @@ title: "Native Boot Windows 11 from a VHDX File"
 date: 2025-05-25 23:00:00 +0000
 categories: [Windows, Boot]
 tags: [windows, boot, winpe]
+author: srodi
 ---
 
 # Native Boot Windows 11 from a VHDX File: Comprehensive Guide #
