@@ -1,16 +1,15 @@
 ---
 title: "Native Boot Windows 11 from a VHDX File"
-date: 2025-05-25 10:00:00 +0000
+date: 2025-05-25 23:00:00 +0000
 categories: [Windows, Boot]
 tags: [windows, boot, winpe]
-toc: true
 ---
 
-# Native Boot Windows 11 from a VHDX File: Comprehensive Guide
+# Native Boot Windows 11 from a VHDX File: Comprehensive Guide #
 
 Native booting Windows 11 from a VHDX file enables you to run a full Windows installation directly from a virtual hard disk without virtualization overhead. This approach is particularly useful when adding Windows to an existing Linux system while maintaining separation between operating systems.
 
-## Prerequisites
+## Prerequisites ##
 
 - Windows 11 ISO file
 - Existing Linux PC
@@ -18,7 +17,7 @@ Native booting Windows 11 from a VHDX file enables you to run a full Windows ins
 - WinPE USB boot key or Ventoy with WinPE ISO
 - Basic familiarity with command line operations
 
-## Step 1: Boot into WinPE and Prepare the VHDX File
+## Step 1: Boot into WinPE and Prepare the VHDX File ##
 
 1. **Boot from your WinPE media**:
     - Insert your WinPE USB or boot from Ventoy with WinPE ISO
@@ -48,7 +47,7 @@ Native booting Windows 11 from a VHDX file enables you to run a full Windows ins
     ```
     (Adjust path and size as needed; V: will be the letter assigned to your VHDX)
 
-## Step 2: Deploy Windows 11 to the VHDX
+## Step 2: Deploy Windows 11 to the VHDX ##
 
 1. **Mount your Windows 11 ISO in WinPE**:
     ```cmd
@@ -72,7 +71,7 @@ Native booting Windows 11 from a VHDX file enables you to run a full Windows ins
     ```
     Replace `V:` with your VHDX drive letter
 
-## Step 3: Configure Boot Entry
+## Step 3: Configure Boot Entry ##
 
 1. **Create boot entry**:
     ```cmd
@@ -99,7 +98,7 @@ Native booting Windows 11 from a VHDX file enables you to run a full Windows ins
     bcdedit /store S:\EFI\Microsoft\Boot\BCD /set {bootmgr} path \EFI\Microsoft\Boot\bootmgfw.efi
     ```
 
-## Step 4: First Boot and Configuration
+## Step 4: First Boot and Configuration ##
 
 1. **Detach VHDX and restart**:
     ```cmd
