@@ -4,6 +4,7 @@ date: 2025-05-26 22:30:00 +0000
 categories: [ChromeOS Flex, Resize]
 tags: [ChromeOS, Live USB]
 author: srodi
+comments: true
 ---
 
 When you create a Chrome OS Flex live USB drive using the official Chromebook Recovery Utility extension, you might notice a frustrating limitation: the recovery image doesn't utilize the full capacity of your USB stick. If you're using a 64GB or 128GB USB drive, Chrome OS Flex might only use a small portion of that space, leaving the rest inaccessible.
