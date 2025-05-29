@@ -6,8 +6,6 @@ tags: [AI, RAG, Python]
 author: srodi
 ---
 
-# 
-
 University quizzes can be challenging, especially when professors craft ambiguous questions with wordplay and metaphorical language. General-purpose LLMs like ChatGPT often struggle with these specialized, context-specific questions. This guide shows how to use Retrieval-Augmented Generation (RAG) to dramatically improve your quiz performance.
 
 ## The Problem
