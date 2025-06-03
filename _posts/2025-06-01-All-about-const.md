@@ -1,4 +1,10 @@
-# Mastering the const Qualifier in C/C++
+---
+title: "Mastering the const Qualifier in C/C++"
+date: 2025-06-02 23:22:00 +0000
+categories: [C++, theory]
+tags: [C++, const]
+author: srodi
+---
 
 The `const` qualifier in C/C++ is a fundamental yet often misunderstood concept that plays a crucial role in writing safe, maintainable code. While it may seem straightforward at first glance, `const` has several nuanced behaviors that can trip up both beginners and experienced developers. This comprehensive guide will demystify the `const` qualifier and help you leverage its full potential.
 
