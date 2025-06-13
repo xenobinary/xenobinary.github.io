@@ -1,5 +1,5 @@
 ---
-title: "MUnderstanding the Critical Section Problem in Operating Systems"
+title: "Understanding the Critical Section Problem in Operating Systems"
 date: 2025-06-12 21:41:00 +0000
 categories: [Operating System, theory]
 tags: [OS]
