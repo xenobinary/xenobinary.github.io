@@ -91,29 +91,4 @@ P6: P(s5) → CODE EXEC → V(s6) → V(s6)
 P7: P(s6) → CODE EXEC
 P8: P(s5) → P(s6) → CODE EXEC
 ```
-**Semaphores used**: 6 semaphores (s1, s2, s3, s4, s5, s6)
-
-## Minimum Semaphore Solution
-
-We can reduce the number of semaphores by reusing them strategically.
-
-### Key Insight: When Can We Reuse Semaphores?
-A semaphore can be reused once ALL processes that need to wait on it have completed their wait operations. 
-
-**4-Semaphore Solution**
-```
-P1: CODE EXEC → V(s1) → V(s1)
-P2: CODE EXEC → V(s2) → V(s2)
-P3: P(s1) → P(s2) → CODE EXEC → V(s3)
-P4: P(s1) → P(s2) → CODE EXEC → V(s4)
-P5: P(s3) → P(s4) → CODE EXEC → V(s1) → V(s1)  // Reuse s1
-P6: P(s1) → CODE EXEC → V(s2) → V(s2)          // Reuse s2
-P7: P(s2) → CODE EXEC
-P8: P(s1) → P(s2) → CODE EXEC
-```
-
-## Summary
-
-- **Original Solution**: Correct but uses 6 semaphores
-- **Optimized Solution**: Uses only 4 semaphores by strategic reuse
-- **Key Insight**: Semaphores can be reused once all processes that depend on them have completed their wait operations
+**Semaphores used**: 6 semaphores (s1 = 0, s2 = 0, s3 = 0, s4 = 0, s5 = 0, s6 = 0)
