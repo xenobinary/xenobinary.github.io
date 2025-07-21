@@ -67,8 +67,11 @@ One of the most powerful features of `const` references is their ability to bind
 
 ```cpp
 double dval{9.17};
-const int &crd{dval};    // ✅ Implicit conversion allowed
-int &rd{dval};           // ❌ Error: type mismatch for non-const reference
+const int &crd(dval);    // ✅ Implicit conversion allowed when using parentheses (). 
+                         //    Some compilers (e.g., GCC) allow const int &crd{dval}; for implicit conversion.
+                         //    However, this conversion is prohibited by the C++ standard in brace initialization.
+int &rd(dval);           // ❌ Error: type mismatch for non-const reference
+int &rd1{dval};          // ❌ Error: type mismatch for non-const reference
 ```
 
 When you bind a `const` reference to a different type, the compiler creates a temporary object:
