@@ -1,5 +1,6 @@
 ---
 title: "Process Synchronization Solution: 8-Process Dependency Problem"
+mermaid: true
 date: 2025-07-10 00:26:00 +0000
 categories: [Operating System, theory]
 tags: [Semaphore, Synchronization]
@@ -16,11 +17,19 @@ We have 8 processes with the following dependencies:
 - P8 must wait for both P5 and P6 to finish (can run concurrently with P7)
 
 ## Dependency Graph
-```
-P1 ──┐
-     ├─→ P3 ──┐
-P2 ──┤       ├─→ P5 ──┬─→ P6 ──→ P7
-     └─→ P4 ──┘       └────└──→ P8
+```mermaid
+flowchart LR
+    X[" "]
+    A["P1"] 
+    B["P2"]
+    A & B --> X
+    C["P3"]
+    D["P4"]
+    X --> C & D
+    D --> E["P5"]
+    C --> E
+    E --> F["P6"] & H["P8"]
+    F --> G["P7"] & H
 ```
 
 ## Solution with Unlimited Semaphores
